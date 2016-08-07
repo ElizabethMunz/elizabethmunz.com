@@ -1,8 +1,10 @@
 doctype html
 html
-  head
-    title= "Elizabeth Munz | " + title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block header
-    block content
+    head
+        title= "Elizabeth Munz | " + title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        include includes/header.jade
+        include includes/nav.jade
+        #container
+            block content
