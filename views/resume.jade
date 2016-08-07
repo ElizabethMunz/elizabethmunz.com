@@ -5,4 +5,175 @@ extends layout
 
 block content
     h1= title
-    p Resume goes here
+    | Below is my complete curriculum vitae. My summarized technical resume can be viewed as a PDF 
+    a(href='http://www.elizabethmunz.com/wp-content/uploads/2016/08/Resume-Elizabeth-Munz-08-04-2016.pdf') here
+    | .
+    p Click each item for details.
+    h3 Work Experience
+    .entry
+        .clicktounhide(onclick="$('#firstbase').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/FirstBase-logo.png', alt='firstbase', width='150', height='43')
+            p
+                strong Tech Intern 
+                | at 
+                strong FirstBase
+                br
+                |         Philadelphia, PA
+                br
+                em Summer 2016
+        #firstbase.hidden
+            p
+                | As part of Comcast's highly-selective Home For The Summer Internship program, I was placed with FirstBase for the three week local startup portion of my internship.
+    .entry
+        .clicktounhide(onclick="$('#comcast').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/Comcast-logo-300x106.png', alt='Comcast', width='150', height='53')
+            p
+                strong Information Security Intern 
+                | at 
+                strong Comcast Cable
+                br
+                |         Philadelphia, PA/Moorestown, NJ
+                br
+                em Summer 2016
+        #comcast.hidden
+            p
+                | I was hired for this internship as part of Comcast's highly-selective Home For The Summer Internship program, a 10-week rotational internship that accepts five rising college sophomores. In this internship, I spent seven weeks working full-time with Comcast's Cybersecurity team, followed by three weeks at a local Philadelphia start-up.
+    .entry
+        .clicktounhide(onclick="$('#puppy').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/PUP2-300px-300x221.png', alt='puppy', width='150', height='110')
+            p
+                strong Puppy Caretaker / Dogsitter
+                br
+                |         Oreland, PA
+                br
+                em 2013 - Present
+        #puppy.hidden
+            p
+                | My first job was taking care of my neighbor's two puppies while he was at work every day. I was responsible for feeding, walking, and training the dogs, as well as cleaning up any messes they made in the house and reporting their behavior back to their owner. The puppies are older now, but I still occasionally feed, walk, and care for them when my neighbor is away.
+    h3 Education
+    .entry
+        .clicktounhide(onclick="$('#temple').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/Temple-University-logo.png', alt='TEMPLE UNIVERSITY', width='150', height='34')
+            p
+                strong B.S. Computer Science
+                |  at
+                strong  Temple University
+                br
+                |         Philadelphia, PA
+                br
+                em Graduation May 2019
+        #temple.hidden
+            p
+                | GPA (weighted):
+                strong  3.97
+    .entry
+        .clicktounhide(onclick="$('#springfield').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/STHS-logo-cropped-300x89.png', alt='Springfield Township High School - Montgomery County, PA', width='150', height='44')
+            p
+                strong High School Diploma 
+                | at 
+                strong Springfield Township High School
+                br
+                |         Glenside, PA
+                br
+                em Graduation June 2015
+        #springfield.hidden
+            p
+                | GPA (weighted):
+                strong  4.30
+    h3 Leadership
+    .entry
+        .clicktounhide(onclick="$('#bookclub').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/STHS-logo-cropped-300x89.png', alt='Springfield Township High School - Montgomery County, PA', width='150', height='44')
+            p
+                strong President, Book Club 
+                | at 
+                strong Springfield Township High School
+                br
+                em 2014-2015
+                br
+        #bookclub.hidden
+            p
+                | After taking on the role of Vice President during my junior year of high school, I was elected President of the school's Book Club for the duration of my senior year. As President, I planned meeting dates, times, and book selections based on the members' availability and interest, and advertised those plans to the student body via posters and announcements. During our monthly meetings, I initiated the discussion with critical questions and encouraged the active participation of all students who showed up. I was also jointly responsible with my VP for acclimating our faculty advisor, the school librarian, who was new to STHS during the 2014-2015 year.
+    .entry
+        .clicktounhide(onclick="$('#artsmag').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/STHS-logo-cropped-300x89.png', alt='Springfield Township High School - Montgomery County, PA', width='150', height='44')
+            p
+                strong Editor-in-Chief
+                strong , Arts and Literary Magazine
+                |  at 
+                strong Springfield Township High School
+                br
+                em 2014-2015
+                br
+        #artsmag.hidden
+            p
+                | Also in my senior year, I was Editor-in-Chief of the Arts and Literary Magazine, an annual publication of student drawings, photographs, poems, and short stories. As head of the magazine, I taught members how to create good visual art and text layouts and scrutinized each page for formatting or grammatical errors. Our editing staff was small, so assigning specific tasks and setting time-based goals was imperative to getting a finished product by the end of the year; these tasks included advertizing the magazine, reaching out to art and English teachers to gather high-quality student work, and speaking to the student artists and authors to encourage submissions.
+            p
+                | I was also the primary organizer of the school's annual Poetry Slam, which was sponsored in part by the Lit Mag.
+    h3 Volunteer Experience
+    .entry
+        .clicktounhide(onclick="$('#foster').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/PSPCA-logo-300x195.jpg', alt='Pennsylvania SPCA: The Advocate for Animals Since 1867', width='150', height='97')
+            p
+                strong Dog Foster Caretaker 
+                | at 
+                strong
+                    | Philadelphia SPCA
+                    br
+                | Philadelphia, PA
+                br
+                em 2014-2015
+        #foster.hidden
+            p
+                | I fostered a black lab named Bear, meaning that he lived at my house and I cared for him 24/7. Bear was a senior dog who needed medical care and socialization practice before he could be placed for permanent adoption. I was responsible for daily pills and ear drops, a special diet, and weekly medicated baths. In early 2015, the PSPCA suffered an outbreak of a flu that affected many of their dogs and prompted a quarantine of the entire facility, but Bear was safe because he was living with me, away from the illness.
+                | After his five months in my care, Bear was a healthy dog, ready to find a forever home.
+    .entry
+        .clicktounhide(onclick="$('#bingo').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/ACTS-logo-300x146.png', alt='ACTS Retirement-Life Communities', width='150', height='73')
+            p
+                strong Bingo Caller & Companion 
+                | at 
+                strong Acts Retirement-Life Communities: Fort Washington Estates
+                br
+                | Fort Washington, PA
+                br
+                em 2013
+        #bingo.hidden
+            p
+                | In the Spring of 2013, I volunteered in the medical facility of a retirement home on Saturday mornings during their weekly Bingo game. I was responsible for setting up the large-print Bingo cards and maintaining interest in the game. Many residents were hard of hearing and had visual or motor impairments, so I would walk around the table and identify numbers and mark the cards for anyone who needed help.
+    h3 Awards and Honors
+    .entry
+        .clicktounhide(onclick="$('#deanslist').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/Temple-University-logo.png', alt='TEMPLE UNIVERSITY', width='150', height='34')
+            p
+                strong Dean's List 
+                | at 
+                strong Temple University
+                br
+                em Fall 2015, Spring 2016
+                br
+        #deanslist.hidden
+            p
+                | For both semesters of my freshman year, my GPA was in the top 16% of all undergraduate students in the College of Science and Technology at Temple University, earning me a place on the university's Dean's List.
+    .entry
+        .clicktounhide(onclick="$('#merit').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/NMSP-logo.png', alt='National Merit Scholarship Program', width='136', height='72')
+            p
+                strong National Merit Scholar Finalist
+                br
+                em Received 2015
+        #merit.hidden
+            p
+                | My PSAT score, SAT score, and strong application earned me semifinalist and finalist status in the National Merit Scholarship Program.
+    .entry
+        .clicktounhide(onclick="$('#bauschandlomb').toggle('blind')")
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/Bausch-and-Lomb-logo-300x28.png', alt='Bausch + Lomb', width='150', height='14')
+            p
+                strong Bausch + Lomb Honorary Science Award
+                br
+                em Received 2014
+        #bauschandlomb.hidden
+            p
+                | I received this honor through Springfield Township High School in the spring of my junior year. Selection for the Bausch + Lomb Honorary Science Award was determined by my academic excellence in science and rigorous science course load, as well as my PSAT and SAT Math scores.
+
