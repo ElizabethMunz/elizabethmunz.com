@@ -1,11 +1,33 @@
 //
    Created by Elizabeth on 8/6/2016.
 
-#nav
+nav
     p
-        a(href="/") About
-        a(href="/resume") Resume
-        a(href="/projects") Projects
-        a(href="/contact") Contact
+        case title
+            when "About"
+                a(href="/").current About
+                a(href="/resume") Resume
+                a(href="/projects") Projects
+                a(href="/contact") Contact
+            when "Resume"
+                a(href="/") About
+                a(href="/resume").current Resume
+                a(href="/projects") Projects
+                a(href="/contact") Contact
+            when "Projects"
+                a(href="/") About
+                a(href="/resume") Resume
+                a(href="/projects").current Projects
+                a(href="/contact") Contact
+            when "Contact"
+                a(href="/") About
+                a(href="/resume") Resume
+                a(href="/projects") Projects
+                a(href="/contact").current Contact
+            default
+                a(href="/") About
+                a(href="/resume") Resume
+                a(href="/projects") Projects
+                a(href="/contact") Contact
         //-a(href="/art") Art
 

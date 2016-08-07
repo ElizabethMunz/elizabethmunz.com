@@ -4,7 +4,7 @@
 extends layout
 
 block content
-    h1= title
+
     | Below is my complete curriculum vitae. My summarized technical resume can be viewed as a PDF 
     a(href='http://www.elizabethmunz.com/wp-content/uploads/2016/08/Resume-Elizabeth-Munz-08-04-2016.pdf') here
     | .
@@ -13,7 +13,7 @@ block content
     .entry
         .clicktounhide(onclick="$('#firstbase').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/FirstBase-logo.png', alt='firstbase', width='150', height='43')
-            p
+            p.title
                 strong Tech Intern 
                 | at 
                 strong FirstBase
@@ -27,7 +27,7 @@ block content
     .entry
         .clicktounhide(onclick="$('#comcast').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/Comcast-logo-300x106.png', alt='Comcast', width='150', height='53')
-            p
+            p.title
                 strong Information Security Intern 
                 | at 
                 strong Comcast Cable
@@ -38,7 +38,7 @@ block content
         #comcast.hidden
             p
                 | I was hired for this internship as part of Comcast's highly-selective Home For The Summer Internship program, a 10-week rotational internship that accepts five rising college sophomores. In this internship, I spent seven weeks working full-time with Comcast's Cybersecurity team, followed by three weeks at a local Philadelphia start-up.
-    .entry
+    .entry.last
         .clicktounhide(onclick="$('#puppy').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/PUP2-300px-300x221.png', alt='puppy', width='150', height='110')
             p
@@ -66,7 +66,7 @@ block content
             p
                 | GPA (weighted):
                 strong  3.97
-    .entry
+    .entry.last
         .clicktounhide(onclick="$('#springfield').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/STHS-logo-cropped-300x89.png', alt='Springfield Township High School - Montgomery County, PA', width='150', height='44')
             p
@@ -95,7 +95,7 @@ block content
         #bookclub.hidden
             p
                 | After taking on the role of Vice President during my junior year of high school, I was elected President of the school's Book Club for the duration of my senior year. As President, I planned meeting dates, times, and book selections based on the members' availability and interest, and advertised those plans to the student body via posters and announcements. During our monthly meetings, I initiated the discussion with critical questions and encouraged the active participation of all students who showed up. I was also jointly responsible with my VP for acclimating our faculty advisor, the school librarian, who was new to STHS during the 2014-2015 year.
-    .entry
+    .entry.last
         .clicktounhide(onclick="$('#artsmag').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/STHS-logo-cropped-300x89.png', alt='Springfield Township High School - Montgomery County, PA', width='150', height='44')
             p
@@ -128,7 +128,7 @@ block content
             p
                 | I fostered a black lab named Bear, meaning that he lived at my house and I cared for him 24/7. Bear was a senior dog who needed medical care and socialization practice before he could be placed for permanent adoption. I was responsible for daily pills and ear drops, a special diet, and weekly medicated baths. In early 2015, the PSPCA suffered an outbreak of a flu that affected many of their dogs and prompted a quarantine of the entire facility, but Bear was safe because he was living with me, away from the illness.
                 | After his five months in my care, Bear was a healthy dog, ready to find a forever home.
-    .entry
+    .entry.last
         .clicktounhide(onclick="$('#bingo').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/ACTS-logo-300x146.png', alt='ACTS Retirement-Life Communities', width='150', height='73')
             p
@@ -158,7 +158,7 @@ block content
                 | For both semesters of my freshman year, my GPA was in the top 16% of all undergraduate students in the College of Science and Technology at Temple University, earning me a place on the university's Dean's List.
     .entry
         .clicktounhide(onclick="$('#merit').toggle('blind')")
-            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/NMSP-logo.png', alt='National Merit Scholarship Program', width='136', height='72')
+            img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/NMSP-logo.png', alt='National Merit Scholarship Program', width='136', height='72', style="margin-right:14px;")
             p
                 strong National Merit Scholar Finalist
                 br
@@ -166,7 +166,7 @@ block content
         #merit.hidden
             p
                 | My PSAT score, SAT score, and strong application earned me semifinalist and finalist status in the National Merit Scholarship Program.
-    .entry
+    .entry.last
         .clicktounhide(onclick="$('#bauschandlomb').toggle('blind')")
             img.resume(src='http://www.elizabethmunz.com/wp-content/uploads/2016/05/Bausch-and-Lomb-logo-300x28.png', alt='Bausch + Lomb', width='150', height='14')
             p
