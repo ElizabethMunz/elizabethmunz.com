@@ -5,6 +5,7 @@
 body {
     font: 14px 'Merriweather Sans', Helvetica, Arial, sans-serif;
     background-color: #ffffff;
+    height: 100%;
 }
 @media screen and (min-width: 600px) {
     body {
@@ -28,10 +29,13 @@ header {
     margin: 0 auto;
     padding: 30px 2px 20px;
     font-size: 1.1em;
-    background: #000080 linear-gradient(#000080, #9999ff);
+    background: linear-gradient(rgba(0, 0, 128, 0.3), rgba(153, 153, 255, 1)),  url(../images/philadelphia-skyline.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     text-align: center;
 }
+
 header h1 {
     font-size: 1.8em;
 }
@@ -48,7 +52,13 @@ header li {
 }
 
 header a {
-    color: #9999ff;
+    color: #f5f5f0;
+}
+
+header a:hover,
+header a:active,
+header a:focus {
+    color: #ffffff;
 }
 
 header i {
@@ -58,6 +68,7 @@ header i {
 @media screen and (min-width: 600px) {
     header {
         padding: 5% 10% 10%;
+        background: transparent;
     }
     header h1 {
         font-size: 2.5em;
@@ -65,6 +76,13 @@ header i {
     header ul {
         font-size: .8em;
     }
+
+    #headerimage {
+        background: linear-gradient(rgba(0, 0, 128, 0.3), rgba(153, 153, 255, 0.7)),  url(../images/philadelphia-skyline.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 }
 @media screen and (min-width: 1050px) {
     header {
@@ -86,29 +104,33 @@ nav {
     margin: 0 auto;
     font-size: 1.5em;
     font-weight: bold;
+    background-color: #9999ff;
+    padding: 0 1% 5px;
 }
 
 nav a {
     display: inline-block;
     font-size: .8em;
-    border-left: 2px solid #9999ff;
-    margin-left: -2px;
-    border-top: 2px solid #9999ff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 8px .5%;
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
+    color: #f5f5f0;
     background-color: #9999ff;
-    width: 24%;
+    width: 23.5%;
 }
 
 nav a.current {
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
     background-color: #fff;
     color: #000080;
 }
 
+nav a:hover,
+nav a:active,
+nav a:focus {
+    color: #ffffff;
+}
 
 @media screen and (min-width: 600px) {
     nav {
@@ -116,15 +138,18 @@ nav a.current {
         left: auto;
         padding: 10px 10% 0;
         width: 80%;
-        background-color: #9999ff;
+        background-color: transparent;
     }
     nav a {
-        border-top: none;
         width: auto;
-        margin: 0;
+        margin: 0 5px 0 0;
         padding: 8px 15px;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: transparent;
+        border: none;
     }
     nav a.current {
         background-color: #fff;
@@ -154,6 +179,10 @@ nav a.current {
     color: #ffffff;
     padding: 10px;
     margin: 0;
+    background: linear-gradient(rgba(0, 0, 128, 0.3), rgba(153, 153, 255, 0.7)), url(../images/philadelphia-skyline.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -183,6 +212,7 @@ img.selfie {
     border-radius: 50%;
     float: right;
     box-shadow: 2px 1px 4px #888;
+    margin: 10px;
 }
 
 
