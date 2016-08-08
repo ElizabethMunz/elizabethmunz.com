@@ -5,7 +5,8 @@ var express = require('express');
 var router = express.Router();
 
 var nodemailer = require('nodemailer');
-//var xoauth2 = require('xoauth2');
+
+var login = require('./../login.json');
 
 
 
@@ -21,7 +22,9 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 
-    var transporter = nodemailer.createTransport('smtps://elizabethmunz.com@gmail.com:XXXXXXX@smtp.gmail.com');
+    //TODO: Add regex check to make sure it's a real email address in email field
+
+    var transporter = nodemailer.createTransport('smtps://' + login.user + '@gmail.com:' + login.pass + '@smtp.gmail.com');
 
     //Content of email
     var mailBody = {
@@ -31,6 +34,7 @@ router.post('/', function(req, res, next) {
         text: "From: \n" + req.body.email + "\n\nBody: \n" + req.body.body
     };
 
+    //Send message
     transporter.sendMail(mailBody, function (error, response) {
         //Email not sent
         if (error) {
