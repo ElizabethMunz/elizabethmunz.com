@@ -131,7 +131,11 @@ nav a:active,
 nav a:focus {
     color: #ffffff;
 }
-
+nav a.current:hover,
+nav a.current:active,
+nav a.current:focus {
+    color: #000080;
+}
 @media screen and (min-width: 600px) {
     nav {
         position: relative;
@@ -274,4 +278,42 @@ img.resume {
     .clicktounhide {
         width: 80%;
     }
+}
+/*-----------------------Forms-------------*/
+form {
+    margin: 0 auto;
+}
+form input {
+    line-height: 2em;
+    margin: 3px;
+
+}
+
+form textarea {
+    line-height: 1.5em;
+    margin: 3px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    float: right;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #888;
+    border: 1px solid #888;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.sent {
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+    clear: both;
+    background-color: #e6e6ff;
+    color: #9999ff;
+    border: 1px solid #9999ff;
+    font-weight: bold;
+    border-radius: 10px;
 }
