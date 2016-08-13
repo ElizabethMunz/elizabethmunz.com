@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 var resume = require('./routes/resume');
 var projects = require('./routes/projects');
 var contact = require('./routes/contact');
+var cg = require('./routes/projects/cg');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/', routes);
 app.use('/resume', resume);
 app.use('/projects', projects);
 app.use('/contact', contact);
+app.use('/projects/cg', cg);
 
 
 // catch 404 and forward to error handler
@@ -44,6 +46,7 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
+    console.log(err)
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
