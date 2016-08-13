@@ -14,6 +14,7 @@ var login = require('./../login.json');
 router.get('/', function(req, res, next) {
     res.render('contact', {
         title: 'Contact',
+        path: req.originalUrl,
         sent: 0,
         error: "",
         messageBody: {}

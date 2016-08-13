@@ -3,23 +3,23 @@
 
 nav
     p
-        case title
-            when "About"
+        case path
+            when "/"
                 a(href="/").current About
                 a(href="/resume") Resume
                 a(href="/projects") Projects
                 a(href="/contact") Contact
-            when "Resume"
+            when "/resume"
                 a(href="/") About
                 a(href="/resume").current Resume
                 a(href="/projects") Projects
                 a(href="/contact") Contact
-            when "Projects"
+            when "/projects"
                 a(href="/") About
                 a(href="/resume") Resume
                 a(href="/projects").current Projects
                 a(href="/contact") Contact
-            when "Contact"
+            when "/contact"
                 a(href="/") About
                 a(href="/resume") Resume
                 a(href="/projects") Projects

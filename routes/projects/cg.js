@@ -6,7 +6,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('projects/cg', { title: 'Project - Crossing Guard' });
+
+    var url = req.originalUrl;
+    var slash = url.lastIndexOf("/");
+    url = url.substring(0,slash);
+
+    res.render('projects/cg', {
+        title: 'Project - Crossing Guard',
+        path: url
+    });
 });
 
 module.exports = router;

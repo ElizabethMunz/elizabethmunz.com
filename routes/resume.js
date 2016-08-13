@@ -6,7 +6,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('resume', { title: 'Resume' });
+    res.render('resume', { title: 'Resume', path: req.originalUrl });
 });
 
 module.exports = router;
