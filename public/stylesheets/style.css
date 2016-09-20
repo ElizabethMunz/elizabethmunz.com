@@ -300,7 +300,7 @@ footer {
 @media screen and (min-width: 1050px) {
     #container {
         width: 60%;
-        padding: 0 20%;
+        padding:  30px 20% 0;
     }
     #container h3.resume {
         margin-left: -33.3%;
