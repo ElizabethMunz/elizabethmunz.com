@@ -9,12 +9,18 @@ block content
 
         p Crossing Guard is a user interface tool for managing&nbsp;
             a(href="http://www.pmacct.net/") PMACCT
-            | &nbsp;Netflow Replicators. PMACCT is an open-source alternative to Comcast's existing Flow Replicator application, but unlike the current solution, it lacks a built-in UI. I built the Crossing Guard UI as an Express app to connect with the PMACCT database. This project allows the engineers at Comcast to replace their current application with open-source and internally-developed programs, saving the company the cost of licensing software and maintenance.
+            | &nbsp;Netflow Replicators. PMACCT is an open-source alternative to Comcast's existing Flow Replicator application, but unlike the current solution, it lacks a built-in UI. This project allows the engineers at Comcast to replace their current application with open-source and internally-developed programs, saving the company the cost of licensing software and maintenance.
 
     span
         h4 Pages
         ul
-            li Replicator Statistics
+            li <strong>Replicator Statistics</strong> <br>
                 | Page displays current system statistics as embedded Kibana graphs and charts. Data shown includes packets in/out per minute, packets dropped per minute, and current total memory usage.
-            li Forwarding Rules
-            li Configuration Files
+            li <strong>Forwarding Rules</strong><br>
+                | Allows user input to dictate the IP address to which Netflow data from given IPs should be forwarded. Users can add new rules or delete existing rules.<em>(See screenshot above.)</em>
+
+
+            li <strong>Configuration Files</strong><br>
+                | PMACCT Replicators should be directed to this page for two necessary configuration files: pretag.map and tee_receivers.lst. The configurations in plain text are located at <pre>/config?file=pretag.map</pre> and <pre>/config?file=tee_receivers.lst</pre>, respectively. The files themselves are dynamically created at the time of request based on the information from the Forwarding Rules page.<br>
+                | In order to prevent redownloading an unchanged configuration file, the PMACCT database runs a Bash script every 5 minutes that accesses <pre>/config?getVersion=true</pre> to check the unique timestamp of the latest updated Forwarding Rules. New config files are only downloaded if Crossing Guard's latest timestamp differs from the timestamp of the existing configuration files.
+
