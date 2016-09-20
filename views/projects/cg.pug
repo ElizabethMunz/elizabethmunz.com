@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+    img(src="../../images/cg.png")
+    h3 Crossing Guard
+
+    span
+        h4 Overview
+
+        p Crossing Guard is a user interface tool for managing&nbsp;
+            a(href="http://www.pmacct.net/") PMACCT
+            | &nbsp;Netflow Replicators. PMACCT is an open-source alternative to Comcast's existing Flow Replicator application, but unlike the current solution, it lacks a built-in UI. I built the Crossing Guard UI as an Express app to connect with the PMACCT database. This project allows the engineers at Comcast to replace their current application with open-source and internally-developed programs, saving the company the cost of licensing software and maintenance.
+
+    span
+        h4 Pages
+        ul
+            li Replicator Statistics
+                | Page displays current system statistics as embedded Kibana graphs and charts. Data shown includes packets in/out per minute, packets dropped per minute, and current total memory usage.
+            li Forwarding Rules
+            li Configuration Files
